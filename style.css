@@ -1,0 +1,160 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Body Styling */
+body {
+    background: #0d0d0d;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Container Styling */
+.container {
+    background: #1e1e1e;
+    padding: 25px;
+    border-radius: 12px;
+    width: 400px;
+    text-align: center;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+    transition: 0.3s ease-in-out;
+}
+
+.container:hover {
+    transform: scale(1.02);
+}
+
+/* Title Styling */
+h1 {
+    font-size: 26px;
+    color: #fff;
+    margin-bottom: 15px;
+    letter-spacing: 1px;
+}
+
+/* Input Fields */
+.tracker input {
+    width: 100%;
+    padding: 12px;
+    margin: 7px 0;
+    border: none;
+    border-radius: 6px;
+    background: #2b2b2b;
+    color: white;
+    font-size: 16px;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.tracker input:focus {
+    outline: none;
+    background: #3a3a3a;
+}
+
+/* Add Button */
+button {
+    background: linear-gradient(45deg, #ffcc00, #ff5500);
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-top: 10px;
+    width: 100%;
+    font-size: 16px;
+    font-weight: bold;
+    transition: 0.3s ease;
+}
+
+button:hover {
+    background: linear-gradient(45deg, #ff5500, #ffcc00);
+    transform: scale(1.05);
+}
+
+/* Summary Section */
+.summary {
+    margin-bottom: 15px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #ffcc00;
+    padding: 10px;
+    background: #292929;
+    border-radius: 8px;
+}
+
+/* Transactions List */
+#transaction-list {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+    max-height: 250px;
+    overflow-y: auto;
+}
+
+/* Scrollbar Customization */
+#transaction-list::-webkit-scrollbar {
+    width: 6px;
+}
+
+#transaction-list::-webkit-scrollbar-thumb {
+    background: #ffcc00;
+    border-radius: 10px;
+}
+
+/* Transaction Items */
+.transaction {
+    position: relative;
+    background: #2b2b2b;
+    margin: 8px 0;
+    padding: 12px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-left: 5px solid;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.transaction:hover {
+    background: #333;
+    transform: translateX(5px);
+}
+
+/* Positive & Negative Transaction Colors */
+.positive {
+    border-left-color: #00C853;
+    color: #00C853;
+}
+
+.negative {
+    border-left-color: #D50000;
+    color: #D50000;
+}
+
+/* Delete Icon */
+.delete-icon {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    cursor: pointer;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    background: rgba(255, 255, 255, 0.3);
+    padding: 5px 8px;
+    border-radius: 50%;
+    transition: 0.3s;
+}
+
+.delete-icon:hover {
+    background: rgba(255, 255, 255, 0.5);
+    transform: scale(1.2);
+}
